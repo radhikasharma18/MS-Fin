@@ -18,18 +18,25 @@ const CustomerRev: React.FC<CustomerRevProps> = ({
 }) => {
   return (
     <motion.div 
-      initial={{ opacity: 0, y: 50}}   
+      initial={{ opacity: 0, y: 30 }}   
       whileInView={{ opacity: 1, y: 0 }}           
-      transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: false, amount: 0.3 }}
-    className=" break-inside-avoid bg-white rounded-2xl p-6  mb-10 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300">
-      <div className="text-yellow-500 text-lg mb-2">{star}</div>
-      <p className="text-gray-700 mb-4">{description}</p>
-      <div className="flex items-center gap-3">
-        {image && <img src={image} alt={name} className="w-10 h-10 rounded-full" />}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="break-inside-avoid bg-white rounded-3xl p-8 mb-6 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 group"
+    >
+      <div className="text-yellow-400 text-xl mb-4 tracking-wider">{star}</div>
+      <p className="text-gray-700 text-sm leading-relaxed mb-6">{description}</p>
+      <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
+        {image && (
+          <img 
+            src={image} 
+            alt={name} 
+            className="w-12 h-12 rounded-full object-cover ring-2 ring-gray-100" 
+          />
+        )}
         <div>
-          <p className="font-semibold text-blue-900">{name}</p>
-          <p className="text-sm text-gray-500">{designation}</p>
+          <p className="font-bold text-gray-900 text-sm">{name}</p>
+          <p className="text-xs text-gray-500 mt-1">{designation}</p>
         </div>
       </div>
     </motion.div>

@@ -1,22 +1,23 @@
 import React from "react";
 
-
 interface CardProps {
   icon?: React.ReactNode;
   title: string;
   description: string;
-  
 }
 
 const Card: React.FC<CardProps> = ({ icon, title, description }) => {
   return (
-    <div className="max-w-sm bg-white border-2px-solid-black p-4 rounded-2xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300 h-64">
-      <div className="text-blue-800 text-3xl flex justify-center items-center w-full">{icon} </div> 
-
-      <div className="p-4">
-        <h2 className="text-xl  text-blue-900 font-semibold mb-2">{title}</h2>
-        <p className="text-gray-600 text-sm mb-4">{description}</p>
-        {/*  */}
+    <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 h-full group">
+      <div className="flex justify-center items-center mb-6">
+        <div className="text-blue-600 text-5xl group-hover:scale-110 transition-transform duration-300">
+          {icon}
+        </div>
+      </div>
+      
+      <div className="text-center">
+        <h3 className="text-xl font-bold text-gray-900 mb-4">{title}</h3>
+        <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
       </div>
     </div>
   );
