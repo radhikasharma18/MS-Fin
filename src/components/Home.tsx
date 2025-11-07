@@ -6,10 +6,7 @@ import CustomerRev from "../card/CustomerRev";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useState } from "react";
 
-
-
-
-const testimonials = [
+ const testimonials = [
   {
     star: "★★★★★",
     name: "David Ali",
@@ -30,7 +27,8 @@ const testimonials = [
     description:
       "Switching to Sleekix was one of our best decisions. Amazing support!",
     designation: "Operations Head",
-  },  {
+  }, 
+   {
     star: "★★★★★",
     name: "David Ali",
     description:
@@ -51,7 +49,7 @@ const testimonials = [
       "Switching to Sleekix was one of our best decisionsSwitching to Sleekix was one of our best decisions. Amazing support!. Amazing support!Switching to Sleekix was one of our best decisions. Amazing support!",
     designation: "Operations Head",
   },
-    {
+  {
     star: "★★★★★",
     name: "Jack Frost",
     description:
@@ -65,7 +63,7 @@ const testimonials = [
       "Switching to Sleekix was one of our best decisionsSwitching to Sleekix was one of our best decisions. Amazing support!. Amazing support!Switching to Sleekix was one of our best decisions. Amazing support!",
     designation: "Operations Head",
   },
-    {
+  {
     star: "★★★★",
     name: "Olivia Wattson",
     description:
@@ -112,7 +110,7 @@ const Home = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-24 py-20 bg-gradient-to-b from-white to-gray-50">
+      <section className="min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-24 py-20 bg-linear-to-b from-white to-gray-50">
         <div className="max-w-7xl w-full">
           <div className="flex items-center justify-center gap-4 mb-12">
             <motion.div 
@@ -120,7 +118,7 @@ const Home = () => {
               whileInView={{ opacity: 1, scale: 1 }}           
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true }} 
-              className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl rotate-12 shadow-lg"
+              className="w-12 h-12 bg-linear-to-br from-red-500 to-red-600 rounded-2xl rotate-12 shadow-lg"
             />
             <motion.div
               initial={{ opacity: 0, y: 30 }}   
@@ -144,7 +142,7 @@ const Home = () => {
               whileInView={{ opacity: 1, scale: 1 }}           
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
               viewport={{ once: true }} 
-              className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl -rotate-12 shadow-lg"
+              className="w-12 h-12 bg-linear-to-br from-blue-600 to-blue-700 rounded-2xl -rotate-12 shadow-lg"
             />
           </div>
         
@@ -295,7 +293,7 @@ const Home = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="bg-gradient-to-br from-red-50 to-blue-50 rounded-3xl p-12 shadow-lg">
+              <div className="bg-linear-to-br from-red-50 to-blue-50 rounded-3xl p-12 shadow-lg">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
                     <p className="text-gray-900 font-semibold text-lg">Micro Loan</p>

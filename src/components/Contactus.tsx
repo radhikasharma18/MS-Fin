@@ -5,10 +5,12 @@ import { FaPhone } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { TfiInfoAlt } from "react-icons/tfi";
 import { motion } from "framer-motion";
+import { FaSquareInstagram } from "react-icons/fa6";
+
 
 const Contactus = () => {
   return (
-    <div className='w-full min-h-screen bg-gradient-to-b from-white to-gray-50 px-6 md:px-12 lg:px-24 py-24'>
+    <div className='w-full min-h-screen bg-linear-to-b from-white to-gray-50 px-6 md:px-12 lg:px-24 py-24'>
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -21,9 +23,9 @@ const Contactus = () => {
            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
   <span className="text-gray-900">Get in </span>
   <span className="relative inline-block">
-    <span className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
+    <span className="bg-linear-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
       Touch    </span>
-    <span className="absolute left-0 bottom-0 w-full h-1 bg-gradient-to-r from-red-600 to-blue-600 rounded-full"></span>
+    <span className="absolute left-0 bottom-0 w-full h-1 bg-linear-to-r from-red-600 to-blue-600 rounded-full"></span>
   </span>
   <span className="text-gray-900"> With Us!</span>
 </h1>
@@ -139,15 +141,27 @@ const Contactus = () => {
             </div>
 
             {/* Social Media */}
-            <div className="mt-8 pt-8 border-t border-gray-100">
+            <div className="mt-8 pt-8 border-t border-gray-100 ">
               <div className="text-lg font-semibold text-gray-900 mb-4">Follow Us</div>
+              <div className="flex gap-2">
               <a 
                 href="#" 
                 className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors duration-300"
               >
                 <FaLinkedin className="text-3xl" />
-                <span className="font-medium">LinkedIn</span>
+                
+                
               </a>
+               <a 
+                href="#" 
+                className="inline-flex items-center gap-2 text-[#e630a3] hover:text-[#e630a3] transition-colors duration-300"
+              >
+                <FaSquareInstagram className="text-3xl" />
+              
+                
+              </a>
+              </div>
+              
             </div>
           </motion.div>
         </div>
