@@ -127,7 +127,7 @@ const Contactus = () => {
               {/* Office Address */}
               <div className="bg-purple-50 rounded-2xl p-5 hover:bg-purple-100 transition-colors duration-300 border border-purple-100">
                 <div className="flex gap-4 items-start"> 
-                  <div className="bg-white h-12 w-12 rounded-xl flex justify-center items-center text-purple-600 text-xl shadow-sm flex-shrink-0">
+                  <div className="bg-white h-12 w-12 rounded-xl flex justify-center items-center text-purple-600 text-xl shadow-sm shrink-0">
                     <TfiLocationPin />
                   </div>
                   <div>

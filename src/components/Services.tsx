@@ -8,7 +8,7 @@ import Catcard from "./Catcard";
 
 const Services = () => {
   return (
-    <div className="bg-gradient-to-b from-[#1a1f3a] to-[#222a52] w-full py-24 px-6 md:px-12 lg:px-24">
+    <div className="bg-linear-to-b from-[#1a1f3a] to-[#222a52] w-full py-24 px-6 md:px-12 lg:px-24">
       {/* Services Overview Section */}
       <section className="max-w-7xl mx-auto mb-24">
         <div className="bg-white rounded-3xl p-12 md:p-16 shadow-xl">

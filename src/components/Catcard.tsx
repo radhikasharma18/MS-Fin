@@ -10,7 +10,7 @@ const Catcard = () => {
       className='w-full px-6 md:px-12 lg:px-24 py-12'
     >
       <div className="max-w-7xl mx-auto">
-        <div className="relative rounded-3xl p-1 bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 hover:from-blue-500 hover:via-purple-500 hover:to-red-500 transition-all duration-700 shadow-lg hover:shadow-2xl">
+        <div className="relative rounded-3xl p-1 bg-linear-to-r from-red-500 via-purple-500 to-blue-500 hover:from-blue-500 hover:via-purple-500 hover:to-red-500 transition-all duration-700 shadow-lg hover:shadow-2xl">
           <div className="bg-white rounded-3xl p-8 md:p-10">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="text-center md:text-left">
@@ -21,7 +21,7 @@ const Catcard = () => {
                   Flexible repayment, minimal documentation
                 </p>
               </div>
-              <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-8 py-4 rounded-2xl transition-all duration-300 shadow-md hover:shadow-xl transform hover:scale-105 whitespace-nowrap">
+              <button className="bg-linear-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-8 py-4 rounded-2xl transition-all duration-300 shadow-md hover:shadow-xl transform hover:scale-105 whitespace-nowrap">
                 Apply Now
               </button>
             </div>
