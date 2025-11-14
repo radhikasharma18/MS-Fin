@@ -7,7 +7,7 @@ const Footer = () => {
 
         {/* Company Info */}
         <div>
-          <h3 className="text-2xl font-semibold mb-4">MS Fin</h3>
+          <h3 className="text-2xl font-semibold mb-4"><span className='text-blue-700'>MS</span><span className='text-red-600'>FIN</span></h3>
           <p className="text-gray-200 text-sm leading-relaxed">
             Empowering your financial goals with smart, quick, and reliable loan solutions.
             Get the support you need — anytime, anywhere.
@@ -29,9 +29,9 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <ul className="text-gray-200 text-sm space-y-2">
-            {/* <li>📍 Jaipur, Rajasthan, India</li>
+            <li>📍 Jaipur, Rajasthan, India</li>
             <li>📞 +91 98765 43210</li>
-            <li>✉️ support@msfin.com</li> */}
+            <li>✉️ support@msfin.com</li>
           </ul>
         </div>
 

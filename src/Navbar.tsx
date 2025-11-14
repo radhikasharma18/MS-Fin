@@ -13,7 +13,7 @@ const Navbar = () => {
       viewport={{ once: false, amount: 0.3 }}
       className="p-2 w-[20%] flex items-center gap-2 ">
         <img src={logo} alt="MSFIN Logo" className="h-12" />
-        <div className="text-2xl font-semibold "><span className="text-blue-900">MS </span><span className="text-2xl font-semibold text-red-700">Fin</span></div>
+        <div className="text-2xl font-semibold "><span className="text-blue-900">MS</span><span className="text-2xl font-semibold text-red-700">FIN</span></div>
       </motion.div>
 
       {/* Center - Navigation Links */}
@@ -25,7 +25,7 @@ const Navbar = () => {
           Home
         </NavLink>
         <NavLink
-          to="/aboutus"
+          to="/aboutus" 
           className="hover:underline  hover:rounded-full p-2"
         >
           About Us

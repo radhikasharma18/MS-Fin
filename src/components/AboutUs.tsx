@@ -11,7 +11,7 @@ const AboutUs = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
        className="text-center mb-16">
-        <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+        <h2 className="text-5xl font-bold bg-linaer-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
           About Us
         </h2>
       </motion.div>
@@ -48,7 +48,7 @@ const AboutUs = () => {
             <li>We provide online instant cash loans</li>
           </ul>
 
-          <button className="bg-gradient-to-r from-blue-600 to-red-600 text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-lg transition-all w-fit">
+          <button className="bg-linear-to-r from-blue-600 to-red-600 text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-lg transition-all w-fit">
             Apply For Loan
           </button>
         </div>
@@ -61,7 +61,7 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 2}}
             viewport={{ once: true }}className="text-5xl font-semibold text-center mb-12">
-          <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
             Our Team
           </span>
         </motion.h2>
@@ -70,7 +70,7 @@ const AboutUs = () => {
         initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 2}}
-      viewport={{ once: false}}
+            viewport={{ once: false}}
             className="flex flex-col gap-16 ">
           {[...Array(6)].map((_, i) => (
             <div
@@ -115,7 +115,7 @@ const AboutUs = () => {
         </motion.div>
       </div>
     </div>
-  );
+  )
 };
 
 export default AboutUs;
