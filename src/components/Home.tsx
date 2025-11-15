@@ -554,77 +554,75 @@ const Home = () => {
           </div>
         </div>
       </section>
-     <section>
-     <h1 className="text-5xl font-extrabold text-center mb-12 tracking-tight">
-  Our <span className="text-red-600">Services</span>
-</h1>
+      
+      <section className="py-28 relative overflow-hidden">
+  {/* Background gradient */}
+  <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-red-50 opacity-60"></div>
 
-{/* <div className="mx-10 lg:mx-32 bg-gradient-to-br from-red-50 via-white to-blue-50 rounded-3xl p-10 border border-red-100/60 shadow-xl"> */}
-<div className="p-8 mx-32 rounded-3xl bg-white shadow-lg border border-gray-100 ">
-  
-  <p className="text-lg leading-relaxed text-gray-700 mb-4">
-    At our NBFC, we understand that financial needs are diverse and time-sensitive.
-    Whether it’s a major life event, business expansion, or purchasing a vehicle,
-    the right credit at the right moment matters.
-  </p>
+  <div className="relative max-w-7xl mx-auto px-6">
+    
+    {/* Heading */}
+    <div className="text-center mb-20">
+      <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900">
+        Our <span className="text-red-600">Services</span>
+      </h1>
+      <p className="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
+        Fast, transparent, and flexible financial solutions designed for people and businesses.
+      </p>
+    </div>
 
-  <p className="text-lg leading-relaxed text-gray-700 mb-4">
-    At <span className="font-bold">MSFIN Credit Private Limited</span>, we offer
-    simple, fast, and transparent borrowing solutions designed for real everyday needs.
-  </p>
-
-  <p className="text-base leading-relaxed text-gray-600 mb-2">
-    We provide <span className="font-bold">Personal Loans</span>, 
-    <span className="font-bold"> Vehicle Loans</span>, and 
-    <span className="font-bold"> MSME Loans</span> with quick approvals,
-    minimal paperwork, and seamless digital processing.
-  </p>
-
-  <p className="text-base leading-relaxed text-gray-600 mb-2">
-    <span className="font-bold">Personal Loans</span> help manage emergencies 
-    or planned expenses like education, medical needs, travel, or home improvements —
-    with competitive rates and flexible tenures.
-  </p>
-
-  <p className="text-base leading-relaxed text-gray-600 mb-2">
-    <span className="font-bold">Vehicle Loans</span> make owning a car or two-wheeler 
-    easier with attractive interest rates, fast disbursals, and flexible EMIs.
-  </p>
-
-  <p className="text-base leading-relaxed text-gray-600">
-    <span className="font-bold">MSME Loans</span> support entrepreneurs with capital 
-    for operations, expansion, machinery, and inventory — helping businesses grow.
-  </p>
-
-</div>
-{/* Service Cards Section */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 px-10 lg:px-32">
-  
-  <div className=" bg-gradient-to-br from-red-50 via-white to-blue-50 rounded-3xl p-10 border border-red-100/60 shadow-xl">
-    <h3 className="text-xl font-bold mb-2 text-gray-800">Personal Loans</h3>
-    <p className="text-gray-600">Quick approvals, flexible EMIs, and zero hidden charges.</p>
+    {/* Cards Section */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      {[
+        {
+          title: "Personal Loans",
+          desc: "Quick approvals, flexible EMIs, and zero hidden charges.",
+          icon: "💰"
+        },
+        {
+          title: "Vehicle Loans",
+          desc: "Finance new or pre-owned vehicles with easy EMIs.",
+          icon: "🚗"
+        },
+        {
+          title: "MSME Loans",
+          desc: "Fuel business growth with flexible capital solutions.",
+          icon: "📈"
+        },
+        {
+          title: "MSME Loans",
+          desc: "Fuel business growth with flexible capital solutions.",
+          icon: "📈"
+        },
+        {
+          title: "MSME Loans",
+          desc: "Fuel business growth with flexible capital solutions.",
+          icon: "📈"
+        },
+        {
+          title: "MSME Loans",
+          desc: "Fuel business growth with flexible capital solutions.",
+          icon: "📈"
+        }
+      ].map((item, idx) => (
+        <div
+          key={idx}
+          className="group bg-white shadow-xl rounded-3xl border border-gray-200 p-10 
+                    hover:shadow-3xl hover:-translate-y-3 transition-all duration-300"
+        >
+          <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+            {item.icon}
+          </div>
+          <h3 className="text-2xl font-bold text-gray-900 mb-3">
+            {item.title}
+          </h3>
+          <p className="text-gray-600">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+ 
   </div>
-
-  <div className=" bg-gradient-to-br from-red-50 via-white to-blue-50 rounded-3xl p-10 border border-red-100/60 shadow-xl">
-    <h3 className="text-xl font-bold mb-2 text-gray-800">Vehicle Loans</h3>
-    <p className="text-gray-600">Buy new or pre-owned vehicles with easy financing options.</p>
-  </div>
-
-  <div className="  bg-gradient-to-br from-red-50 via-white to-blue-50 rounded-3xl p-10 border border-red-100/60 shadow-xl">
-    <h3 className="text-xl font-bold mb-2 text-gray-800">MSME Loans</h3>
-    <p className="text-gray-600">Fuel business growth with flexible capital solutions.</p>
-  </div>
-
-</div>
-
-<div className="text-center mt-12">
-  <button className="px-10 py-4 bg-blue-700 text-white font-bold rounded-full 
-  shadow-lg hover:bg-blue-800 hover:shadow-xl transition-all duration-300">
-    Explore All Services
-  </button>
-</div>
-
-     </section>
+</section>
      
       {/* Testimonials Section */}
       <section className="bg-white px-6 md:px-12 lg:px-24 py-24">
